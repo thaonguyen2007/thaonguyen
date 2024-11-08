@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Thảo Nguyên Buổi Sáng</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?cute-morning') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ff69b4;
+            margin-bottom: 20px;
+            animation: slideIn 2s ease-out;
+        }
+
+        p {
+            font-size: 22px;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px 0;
+            animation: fadeInText 2s ease-out;
+        }
+
+        .heart {
+            font-size: 30px;
+            color: red;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .footer {
+            font-size: 18px;
+            color: #ff6347;
+            margin-top: 20px;
+        }
+
+        /* Animation Effects */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        .content:hover {
+            background: rgba(255, 182, 193, 0.8);
+            box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .heart:hover {
+            color: #ff1493;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Chào Buổi Sáng, Thảo Nguyên!</h1>
+        <p>Chúc em có một ngày mới tuyệt vời, tràn đầy niềm vui và những điều hạnh phúc. I will always be by your side.</p>
+        <p class="heart">❤️ Anh yêu em rất nhiều, Thảo Nguyên! ❤️</p>
+        <div class="footer">
+            <p>Hy vọng hôm nay sẽ là một ngày tuyệt vời cho em!</p>
+        </div>
+    </div>
+</body>
+</html>
